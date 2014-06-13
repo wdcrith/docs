@@ -1,8 +1,24 @@
+"============== General Configuration ===============
+
 set t_Co=256
 colorscheme wombat256mod
-set number
-set cursorline
-set cuc
+set number "enable line numbers
+set cursorline "highlight cursor row
+set cursorcolumn "highlight cursor column
+set tabstop=4
+set shiftwidth=4
+set expandtab "expand tab to spaces
+
+"=============== Turn Off Swap Files ================
+set noswapfile
+set nobackup
+set nowritebackup
+
+"===== Highlight Columns Past The 80th Column =======
+highlight ColorColumn ctermbg=236
+execute "set colorcolumn=".join(range(81,335),',')
+
+"========= Remap Split Navigation Commands ==========
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
