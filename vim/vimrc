@@ -8,6 +8,10 @@ set cursorcolumn "highlight cursor column
 set tabstop=4
 set shiftwidth=4
 set expandtab "expand tab to spaces
+set fileformat=unix
+set fileformats=unix,dos
+set lazyredraw "reduces lag when scrolling
+set ttyfast "sends more data for smoother drawing
 
 "=============== Turn Off Swap Files ================
 set noswapfile
@@ -23,3 +27,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+"====  Enable code highlighting for SCons files =====
+au BufNewFile,BufRead SCons* set filetype=python
