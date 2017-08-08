@@ -1,9 +1,13 @@
 [user]
-	name = wdcrith
-	email = wdc.rith@gmail.com
+    name = Bill Canfield
+    email = wdc.rith@gmail.com
+[core]
+    editor = vi
 [alias]
-    plog = log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    plog = log --all --graph --pretty=format:'%Cred%h%Creset \
+        -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' \
+        --abbrev-commit --date=relative
 [help]
-	autocorrect = 1
+    autocorrect = 1
 [color]
-	ui = 1
+    ui = 1
